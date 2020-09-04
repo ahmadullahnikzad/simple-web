@@ -1,0 +1,115 @@
+.topmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topmenu li {
+    float: left;
+}
+
+.topmenu a {
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    background-color: rgb(43, 153, 226);
+}
+
+.topmenu a:hover:not(.active) {
+    background-color: rgb(78, 78, 78);
+}
+
+.active:hover {
+    background-color: rgb(26, 148, 219);
+}
+
+.sidemenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.sidemenu li a {
+    display: block;
+    /*we want to hover on the link we use block in a tag */
+    background-color: rgb(223, 223, 223);
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+.sidemenu li a:hover:not(.active) {
+    background-color: rgb(197, 197, 197);
+}
+
+.sidemenu .active {
+    background-color: rgb(43, 153, 226);
+    color: white;
+}
+
+
+/*this is the width of side menu we used percentage to make our site responsive*/
+
+.sidemenu {
+    width: 25%;
+}
+
+
+/*we wanted to clear content before sidemenu and content when we use float then we use this technique keep this in mind*/
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/*float is for floating horizontally elements*/
+
+.column {
+    float: left;
+}
+
+
+/*this is the main content of web*/
+
+.content {
+    width: 75%;
+    padding: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*we use box-sizing:border-box to exclude padding and margin from width of the box*/
+
+.content .content-header {
+    background-color: rgb(43, 153, 226);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+/*i designed footer*/
+
+.footer {
+    background-color: rgb(43, 153, 226);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
